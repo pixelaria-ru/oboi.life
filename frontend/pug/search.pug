@@ -1,0 +1,89 @@
+doctype html
+html(lang='ru')
+    head
+        meta(charset='utf-8')
+        meta(name="theme-color" content="#e04592")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name='viewport' content='ya-title=#e04592, ya-dock=fade, initial-scale=1, maximum-scale=1, user-scalable=no')
+        meta(name='robots' content='none')
+        title ОБОИ.life
+        link(rel='stylesheet' href='css/style.css')
+    body
+      include inc/header.pug
+      main.main
+        .category
+          .cat-bg
+          .category-page.bounceInUp.animated
+            
+            .category-page__head-box.flex
+              .head-box_left-side
+                .sidebar
+                  a(href='index.html') Главная&nbsp;&nbsp;—&nbsp;&nbsp;
+                  span Результаты поиска  
+                h1 Плюмбус X
+          
+            .flex
+              aside.category-page__aside
+                  nav.category-aside-nav
+                    ul.aside-nav__menu
+                      li.aside-nav__menu-item
+                        span Обои
+                      li.aside-nav__menu-item
+                        span Фрески
+                      li.aside-nav__menu-item
+                        span Декор
+                      li.aside-nav__menu-item
+                        span Клей 
+                      li.aside-nav__menu-item
+                        span Напольные покрытия
+                      li.aside-nav__menu-item
+                        span Плитка
+                  .product-advantages
+                    .product-advantage
+                      .flex
+                        .product-advantage__img
+                          img(src='' alt='')
+                        .product-advantage__info
+                          h5 Преимущество №1
+                          p привлекательное, также понятное
+                    .product-advantage
+                      .flex
+                        .product-advantage__img
+                          img(src='' alt='')
+                        .product-advantage__info
+                          h5 Преимущество №1
+                          p привлекательное, также понятное
+                    .product-advantage
+                      .flex
+                        .product-advantage__img
+                          img(src='' alt='')
+                        .product-advantage__info
+                          h5 Преимущество №1
+                          p привлекательное, также понятное
+            
+                    
+                    
+              .category-page__content
+                form.content-sort.flex
+                  span Сортировать:  
+                  input(type='hidden' id='sort-popular')
+                  label(for='sort-popular').sort-item.sort-active по популярности
+                  input(type='hidden' id='sort-price')
+                  label(for='sort-price').sort-item по цене
+                  input(type='hidden' id='sort-date')
+                  label(for='sort-date').sort-item по новизне  
+                  input(type='hidden' id='sort-sale')
+                  label(for='sort-sale').sort-item по акции 
+                .serarch-not-found.flex
+                    .wrap
+                      img(src='images/search-no-found.jpg' alt='Ничего не найденно')
+                      p Ничего не найдено. Попробуйте сократить или изменить запрос.
+        
+        
+
+          include inc/main__advantages.pug
+          include inc/main__seo-text.pug
+      include inc/footer.pug        
+
+      script
+        include script/openSearch.js

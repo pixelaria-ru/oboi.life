@@ -1,0 +1,245 @@
+doctype html
+html(lang='ru')
+    head
+        meta(charset='utf-8')
+        meta(name="theme-color" content="#e04592")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name='viewport' content='ya-title=#e04592, ya-dock=fade, initial-scale=1, maximum-scale=1, user-scalable=no')
+        meta(name='robots' content='none')
+        title ОБОИ.life
+        link(rel='stylesheet' href='css/style.css')
+    body
+      include inc/header.pug
+      main.main
+          .main__initial-screen.flex
+              .container
+                  h1
+                      span Самый  
+                      |удобный магазин для выбора обоев
+                  form(action='/formus.php').form-wallpaper.flex
+                      .form-wallpaper__select
+                          .select-box.select--materials
+                              span.clean.dnone
+                                +icon('close')
+                              ul.sexy-select.flex
+                               +icon('materials')
+                               li(data-color='all').sexy-select__item
+                                  span.text Любые материалы обоев
+                                  span.osn
+                                  span.pok
+                               +icon('right-arrow')
+                              ul.sexy-select__list
+                                .flex
+                                  h6 Основа
+                                  #osn.category-aside__chekbox.flex
+                                    input(type='checkbox' id='n1')
+                                    label(for='n1') Флизелин
+                                    input(type='checkbox' id='n2')
+                                    label(for='n2') Бумага
+                                hr
+                                .flex
+                                  h6 Покрытие
+                                  #pok.category-aside__chekbox.flex
+                                    input(type='checkbox' id='n4')
+                                    label(for='n4') Флизелин
+                                    input(type='checkbox' id='n5')
+                                    label(for='n5') Бумага
+                                    input(type='checkbox' id='n6')
+                                    label(for='n6') Текстиль
+                                    input(type='checkbox' id='n7')
+                                    label(for='n7') Винил 
+                                    input(type='checkbox' id='n8')
+                                    label(for='n8') Акрил
+                      .form-wallpaper__select  
+                          .select-box.select--figures          
+                              .sexy-select.flex 
+                                +icon('figures')
+                                span Все типы рисунка
+                                +icon('right-arrow')  
+                      .form-wallpaper__select
+                          .select-box.select--colors
+                              span.close.dnone
+                                +icon('close')
+                              ul.sexy-select.flex
+                                +icon('colors')
+                                .category-aside__colors.flex                                      
+                                li(data-color='all').sexy-select__item.text
+                                    span Любые цвета
+                                +icon('right-arrow')
+                              .sexy-select__list.flex
+                                .category-aside__colors.flex
+                                  label(for='col1' data-title='розовый').color1
+                                    input(type='checkbox' id='col1' )
+                                    +icon('checked')
+                                    +icon('close')
+                                  label(for='col2' data-title='оранжевый').color2
+                                    input(type='checkbox' id='col2')
+                                    +icon('checked')
+                                    +icon('close')
+                                  label(for='col3' data-title='желтый').color3
+                                    input(type='checkbox' id='col3')
+                                    +icon('checked')
+                                    +icon('close')
+                                  label(for='col4' data-title='зеленный ').color4
+                                    input(type='checkbox' id='col4')
+                                    +icon('checked')
+                                    +icon('close')
+                                  label(for='col5' data-title='голубой').color5
+                                    input(type='checkbox' id='col5')
+                                    +icon('checked')
+                                    +icon('close')
+                                  label(for='col6' data-title='цвет').color6
+                                    input(type='checkbox' id='col6')
+                                    +icon('checked')
+                                    +icon('close')
+                                  label(for='col7' data-title='цвет').color7
+                                    input(type='checkbox' id='col7')
+                                    +icon('checked')
+                                    +icon('close')
+                                  label(for='col8' data-title='цвет').color8
+                                    input(type='checkbox' id='col8')
+                                    +icon('checked')
+                                    +icon('close')
+                                  label(for='col9' data-title='цвет').color9
+                                    input(type='checkbox' id='col9')
+                                    +icon('checked','white')
+                                    +icon('close','white')
+                                  label(for='col10' data-title='цвет').color10
+                                    input(type='checkbox' id='col10')
+                                    +icon('checked','white')
+                                    +icon('close','white')
+                                  label(for='col11' data-title='цвет').color11
+                                    input(type='checkbox' id='col11')
+                                    +icon('checked' ,'white')
+                                    +icon('close','white')
+                                  label(for='col12' data-title='цвет').color12
+                                    input(type='checkbox' id='col12')
+                                    +icon('checked','white')
+                                    +icon('close','white')
+                                  label(for='col13' data-title='цвет').color13
+                                    input(type='checkbox' id='col13')
+                                    +icon('checked')
+                                    +icon('close')
+                                  label(for='col14' data-title='цвет').color14
+                                    input(type='checkbox' id='col14')
+                                    +icon('checked')
+                                    +icon('close')
+                                  label(for='col15' data-title='цвет').color15
+                                    input(type='checkbox' id='col15')
+                                    +icon('checked' ,'white')
+                                    +icon('close' ,'white')
+                                  label(for='col16' data-title='цвет').color16
+                                    input(type='checkbox' id='col16')
+                                    +icon('checked','white')
+                                    +icon('close' ,'white')
+                                  label(for='col17' data-title='цвет').color17
+                                    input(type='checkbox' id='col17')
+                                    +icon('checked')
+                                    +icon('close')
+                                  label(for='col18' data-title='цвет').color18
+                                    input(type='checkbox' id='col18')
+                                    +icon('checked')
+                                    +icon('close')
+                                  label(for='col19' data-title='цвет').color19
+                                    input(type='checkbox' id='col19')
+                                    +icon('checked','white')
+                                    +icon('close' ,'white')
+                                  label(for='col20' data-title='цвет' ).color20
+                                    input(type='checkbox' id='col20')
+                                    +icon('checked')   
+                                    +icon('close')
+                                                      
+                      .form-wallpaper__select
+                          .select-box.select--prices
+                            .sexy-select.flex 
+                                +icon('prices')
+                                label(for="amount").price1
+                                input(type="hidden" id="amount" readonly)
+                                +icon('right-arrow')
+                            .sexy-select__list.select--prices
+                              .flex
+                                #slider-range
+                                label(for="amount").price
+                                .price-radio-button.flex
+                                  input(type='radio' name='price' id='rulon' value='1' checked)
+                                  label(for='rulon') 
+                                    span 
+                                    |за рулон
+                                  input(type='radio' name='price' id='m2' value='1')
+                                  label(for='m2') 
+                                    span 
+                                    |за м<sup>2</sup>
+                              hr
+                      .form-wallpaper__buttons.flex
+                        .wrap
+                          a(href='/subcategory.html').form-wallpaper__link Расширенный поиск
+                        input.button.button--pink(type='submit' value='Подобрать обои')
+                  i.initial-screen--decor
+          .main__smart-search
+            .container
+              .flex
+                h2 Быстрый  поиск  по каталогу
+                form.flex
+                  input(type='text' placeholder='Введите артикул или название  ')
+                  input(type='submit' value='Найти').button.button--pink
+              hr
+              
+            
+          .main__updates-catalogue
+              .container
+                  h2 Последние обновления каталога
+                  .box-goods.flex
+
+                      +custom-wallpaper('Zambaiti Parati Trussardi 3 Z3401','1')
+                      +custom-wallpaper('Grandeco Textured Plains TP ','2')
+                      +custom-wallpaper('Zambaiti Parati Trussardi','3')
+                      +custom-wallpaper('Marburg Colani Evolution 56309','4')
+                      +custom-wallpaper('Zambaiti Parati Trussardi 3 Z3401','5')
+                      +custom-wallpaper('Grandeco Textured Plains TP ','6')
+                      +custom-wallpaper('Zambaiti Parati Trussardi','7')
+                      +custom-wallpaper('Marburg Colani Evolution 56309','8')
+                  hr
+          .main__sale
+              
+              .owl-carousel
+                  +article-sale
+                  +article-sale
+          include inc/main__advantages.pug
+          .main__all-catalogue
+              .container
+                  h2 Более 2000 обоев на любой вкус
+                  .box-goods.flex
+                      +custom-wallpaper('Zambaiti Parati Trussardi 3 Z3401','9')
+                      +custom-wallpaper('Grandeco Textured Plains TP ','10')
+                      +custom-wallpaper('Zambaiti Parati Trussardi','11')
+                      +custom-wallpaper('Marburg Colani Evolution 56309','12')
+                      +custom-wallpaper('Zambaiti Parati Trussardi 3 Z3401','13')
+                      +custom-wallpaper('Grandeco Textured Plains TP ','14')
+                      +custom-wallpaper('Zambaiti Parati Trussardi','15')
+                      +custom-wallpaper('Marburg Colani Evolution 56309','16')
+                      +custom-wallpaper('Zambaiti Parati Trussardi 3 Z3401','17')
+                      +custom-wallpaper('Grandeco Textured Plains TP ','18')
+                      +custom-wallpaper('Zambaiti Parati Trussardi','19')
+                      +custom-wallpaper('Marburg Colani Evolution 56309','20')
+                      +custom-wallpaper('Zambaiti Parati Trussardi 3 Z3401','21')
+                      +custom-wallpaper('Grandeco Textured Plains TP ','22')
+                      +custom-wallpaper('Zambaiti Parati Trussardi','23')
+                      +custom-wallpaper('Marburg Colani Evolution 56309','24')
+                  button.button.button--pink Открыть полный каталог
+          .main__last-news
+              .container
+                  h2.left 
+                      span Последние 
+                      |новости
+                  
+                  +article-news('Заголовок статьи, короткий ','11.10 ')
+                  +article-news('Заголовок статьи или новости, средней длины','6.10  ')
+                  +article-news('Заголовок статьи, новости,  трактата, сочинения, доклада…','23.09 ')
+                  +article-news('Заголовок статьи, новости,  трактата, сочинения, доклада…','22.02 ')
+                  a(href='/category-news.html').last-news__link Смотреть все новости
+
+          include inc/main__seo-text.pug
+        
+      include inc/footer.pug
+      script
+        include script/var.js

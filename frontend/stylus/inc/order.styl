@@ -1,0 +1,220 @@
+.order-form
+  justify-content: space-between;
+
+  .order-form--left
+    width 600px
+  &__block
+    &:first-child
+      h2
+        margin: 0 0 32px
+    h2
+      color: #333333;
+      font-family: "Gotham Pro Light";
+      font-size: 24px;
+      font-weight: 300;
+      margin: 30px 0
+      text-align: left
+
+    &-fild
+      align-items: center
+      margin: 15px 0
+
+      h3
+        color: #333333;
+        font-family: "PT Sans";
+        font-size: 16px;
+        font-weight: 400;
+        margin-right: 16px
+      input
+        box-shadow: inset 0 1px 10px rgba(188, 188, 188, 0.3);
+        border-radius: 32px;
+        border: 1px solid #e7e7e7;
+        background-color: #ffffff;
+        color: #333;
+        font-family: "PT Sans";
+        font-size: 16px;
+        font-weight: 400;
+        padding: 23px 25px 21px
+        max-width: 465px;
+        width: 100%
+        max-height: 60px
+        transition: .55s
+        &::placeholder,&::-moz-placeholder
+          color: #bfbfbf
+
+        &:hover
+          color #333
+    &.order--delivery
+      .order-form__block-fild
+        input
+          max-width: 530px
+    .price-radio-button
+      margin: 30px 0
+.order-form__two-blocks
+    .order-form__block-fild
+        width: 48%
+        &.flex
+          flex-wrap: nowrap;
+        &:first-child
+          input
+            max-width:  240px;
+            &:invalid
+              border: 1px solid #ff8075!important;
+        &:last-child
+          margin-left: 20px
+          input
+            max-width:  195px;
+
+
+.all-order
+  width: 482px;
+  height: 428px;
+  padding: 36px 30px
+  border: 1px solid #bfbfbf;
+  position: relative
+  &:before
+    content ''
+    width 100%
+    position: absolute;
+    height: 100%;
+    left: 5px;
+    bottom: 5px;
+    box-shadow inset 0 1px 10px rgba(0, 0, 0, 0.1)
+    background-image $bg-repeat
+    opacity: .55;
+    z-index: -1
+  .cart-product
+    .cart-product__img
+      size 60px
+    .cart-product__info
+      margin: 0 20px;
+      color: #333333;
+      font-family: "PT Sans";
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+    .cart-product__price
+      color: #333333;
+      font-family: "Gotham Pro";
+      font-size: 16px;
+      margin: 0 20px
+    .icon-close
+        size 16px
+  h2
+    color: #333333;
+    font-family: "Gotham Pro Light";
+    font-size: 24px;
+    font-weight: 300;
+    margin: 0 0 30px
+    text-align: left
+.order-end
+  justify-content: flex-end;
+  align-items: center;
+  margin: 50px 0
+.order-result
+  color: #333333;
+  font-family: "Gotham Pro";
+  font-size: 16px;
+  margin-right: 20px
+  span
+    color: $color-xyeta
+
+hr
+  height: 1px;
+  width: 100%
+  border 0
+  margin: 30px 0
+  background-color: #bfbfbf;
+.order__info
+  width: 100%;
+  &-detail
+    align-items: center
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 20px 0
+    &:first-child
+      padding: 40px 0 20px
+    h5
+      color: #333333;
+      font-size: 16px;
+      font-weight: 700;
+    p
+      color: #333333;
+      font-family: "Gotham Pro Light";
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 28px;
+      max-width: 850px
+
+#open-modal
+  background #5c5c5c
+  &.button--pink
+    background #e35572
+#order-modal
+  background-color: rgba(51, 51, 51, 0.1);
+  width: 100vw
+  height: 100vh
+  position: fixed;
+  top: 0
+  z-index: -9999
+  opacity: 0
+  transition: .55s
+  cursor url(../images/cancel.png),crosshair
+
+  &.active
+    opacity 1
+    z-index: 999999
+    .modal-wrap
+      top 0
+  .modal-wrap
+    margin: auto;
+    max-width: 590px
+    transition: .55s
+    width: 100%
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 150px;
+    bottom: 0;
+    height: 100%
+    max-height: 620px
+    cursor default
+  .order-modal__img
+    box-shadow: inset 0 1px 10px rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(112deg, #ffda8f 0%, #e04592 100%);
+    padding: 50px 190px
+    position: relative;
+    &:after
+      content: ''
+      background: repeating-linear-gradient(135deg,rgba(138,2,52,.05),#0000 3px,#0000 0px,#0000 9px)
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    .modal__img-box
+      border-radius: 50%
+      overflow: hidden;
+      z-index: 2;
+      position: relative;
+      width: 210px;
+      height: 210px;
+      background-color: #ffffff;
+      align-items: center
+  .order-modal__info
+    text-align: center
+    padding: 50px 40px
+    background: #fff
+
+    h4
+      color: #333333;
+      font-size: 36px;
+    p
+      color: #333333;
+      font-family: "PT Sans";
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 28px;
+      margin: 20px 0 30px
+    a
+      display: inline-block;

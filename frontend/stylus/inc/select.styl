@@ -1,0 +1,318 @@
+.sexy-select
+  color #333
+  width 100%
+  min-height 60px
+  padding 0 25px
+  background #fff
+  align-items center
+  cursor pointer
+  position relative
+  z-index 2
+  overflow: hidden
+
+
+
+  &__list
+    background #fff
+    margin-top 5px
+    padding 21px 10px 21px 20px
+
+    cursor pointer
+    opacity 0
+    transition .4s
+    transform translateY(25px)
+    z-index -1
+    width 100%
+    .category-aside__colors
+      margin-top: 0
+    .flex
+      align-items: flex-start;
+      justify-content: space-between;
+    hr
+      height 1px
+      border 0
+      margin: 10px 0 20px
+      background-color #bfbfbf
+    h6
+      width:30%;
+      color #333333
+      font-family "PT Sans"
+      font-size 16px
+      font-weight 400
+    #osn,#pok
+      width: 70%;
+      margin-top: 0;
+      margin-left: 0;
+      label
+        font-size: 12px
+        margin-left: 9px;
+        margin-bottom: 9px;
+        width: 45%;
+        &:before
+          width 14px
+          height 14px
+
+    &.select--prices
+      padding 25px 20px 0
+      hr
+        height 1px
+        background-color #bfbfbf
+        border 0
+        margin-top 25px
+      .price
+        color #333333
+        font-family "PT Sans"
+        font-size 16px
+        font-weight 400
+        line-height 24px
+
+        .cont-box
+          padding: 6px 9px
+          margin: 0 4px;
+          box-shadow inset 0 0 5px rgba(0, 0, 0, 0.2)
+          background-color #ffffff
+          &:last-child
+            margin: 0 0 0 4px
+    &.active
+      opacity 1
+      transform translateY(0)
+      z-index 3
+
+ .close
+   position absolute
+   right -5px
+   top -5px
+   z-index 3
+   background $color-fiolet-govna
+   border-radius 50%
+   border 0
+   width 24px
+   height 24px
+   cursor pointer
+   outline none
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   .icon
+     width 10px
+     height 10px
+     fill #ffffff
+  .dnone
+   display none!important
+ .select-box
+   position relative
+ .none
+   &:before
+     display none
+ .sexy-select,.sexy-select__list
+  .select__item
+    .item__span
+      width 30px
+      height 30px
+      border-radius 50%
+      margin 5px
+
+      transition .4s
+      display block
+      &:hover,&:active
+        transform scale(1.5)
+   [data-color=pink]
+     .item__span
+       background-color #ff9188
+   [data-color=color-2]
+     .item__span
+       background-color #ffda8f
+   [data-color=yellow]
+     .item__span
+       background-color #fff88f
+   [data-color=green]
+     .item__span
+       background-color #b6ff8f
+   [data-color=color-3]
+     .item__span
+       background-color #8fffbe
+   [data-color=blue]
+     .item__span
+       background-color #8fffea
+   [data-color=color-4]
+     .item__span
+       background-color #8fd4ff
+   [data-color=color-5]
+     .item__span
+       background-color #8f92ff
+   [data-color=color-6]
+     .item__span
+       background-color #c08fff
+   [data-color=color-7]
+     .item__span
+       background-color #ff8fde
+   [data-color=color-8]
+     .item__span
+       border 1px solid #ededed
+       box-shadow inset 0 0 4px rgba(0, 0, 0, 0.1)
+       background-color #ffffff
+   [data-color=color-9]
+     .item__span
+       background-color #e4e4e4
+   [data-color=color-10]
+     .item__span
+       background-color #333333
+   [data-color=color-11]
+     .item__span
+       background-image linear-gradient(134deg, #dedede 0%, #95979f 100%)
+   [data-color=color-12]
+     .item__span
+       background-image linear-gradient(134deg, #ffe848 0%, #dacc06 100%)
+   [data-color=color-13]
+     .item__span
+       background-color #b49a68
+   [data-color=color-14]
+     .item__span
+       background-color #a55e58
+   [data-color=color-15]
+     .item__span
+       background-color #f2e8c9
+   [data-color=color-16]
+     .item__span
+       background-color #9cb764
+   [data-color=color-17]
+     .item__span
+       background url('data:image/png;base64,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')
+.select-box
+  &.select--materials
+    width 300px
+  &.select--colors
+     width 230px
+.sexy-select
+  .icon-right-arrow
+    width 20px
+    height 20px
+    fill: #333;
+    transform: rotate(90deg);
+    transition .55s
+    position: absolute;
+    right: 20px;
+    margin-right: 0px!important
+  &.active
+     .icon-right-arrow
+        transform rotate(270deg)
+  &__list
+    font-family sans-serif
+    background #fff
+    margin-top 5px
+    padding 26px 10px 16px 20px
+    visibility: hidden;
+    cursor pointer
+    position absolute
+    opacity 0
+    transition .4s
+    transform translateY(25px)
+    z-index -1
+
+    p
+      margin 22px 0 10px
+
+
+
+ .clean
+   position absolute
+   right -5px
+   top -5px
+   z-index 3
+   background $color-fiolet-govna
+   border-radius 50%
+   border 0
+   width 24px
+   height 24px
+   cursor pointer
+   outline none
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   .icon
+     width 10px
+     height 10px
+     fill #ffffff
+.select--prices
+   .sexy-select
+        .icon
+          margin-right: 10px
+          width 20px
+          height 20px
+          fill: #333;
+.select--figures
+   .sexy-select
+        .icon
+          margin-right: 10px
+          width 20px
+          height 20px
+          fill: #333;
+.select--colors
+     .sexy-select
+          .icon-colors
+            width 20px
+            height 20px
+            fill: #333;
+            margin-right: 10px
+            &.none
+              display: none
+          .category-aside__colors
+            margin-top 12px
+            max-height: 40px;
+            overflow: hidden;
+            label
+              transition .55s
+ .select--materials
+     .sexy-select
+          .icon-materials
+            margin-right: 10px
+            width 20px
+            height 20px
+            fill: #333;
+
+.category-aside__colors
+  label
+    &:before
+      content: attr(data-title)
+      background: #333333e6
+      padding: 3px 6px
+      font-size: 13px
+      color #fff
+      position: relative;
+      top: -60px
+      position: absolute
+      transition: .2s linear
+      opacity: 0
+      visibility: hidden;
+    &:after
+      position: absolute
+      content: "";
+      width: 0;
+      height: 0;
+      border: 7px solid transparent;
+      border-top-color: #333333e6
+      bottom: 53px;
+      left: calc(50% - 7px);
+      transition: .2s linear
+      opacity: 0
+      visibility: hidden;
+    &:hover
+      &:before
+        opacity 1
+        top: -30px
+        visibility: visible;
+      &:after
+        visibility: visible;
+        opacity 1
+        bottom: 23px
+
+
+.modal-filtr
+  .category-aside__colors
+    label
+
+
+      &:hover
+        &:before
+
+          top: -28px

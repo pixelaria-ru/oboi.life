@@ -1,0 +1,523 @@
+.sidebar
+  margin-bottom 20px
+  line-height: 0;
+  a,span
+    color #bfbfbf
+    font-family "Gotham Pro"
+    font-size 12px
+    line-height: 16px
+.next-page
+  text-align: center;
+  width 100%
+  padding: 22px 0
+  position: relative;
+  z-index: 1
+  background: $bg-repeat
+
+
+
+
+.category
+  position: relative;
+
+  padding-top: 115px;
+
+
+  .cat-bg
+    z-index: -1
+    position: absolute;
+    height 400px
+    top 0
+    border-bottom-left-radius 100%
+    border-bottom-right-radius 100%
+    width 200%
+    left -50%
+    box-shadow inset 0 1px 10px rgba(0, 0, 0, 0.1)
+    background-image linear-gradient(0deg, #ffda8f 0%, #e04592 100%);
+    &:before
+      content ''
+      position absolute
+      border-bottom-left-radius 100%
+      border-bottom-right-radius 100%
+      left 0
+      right 0
+      top 0
+      bottom 0
+      background: repeating-linear-gradient(135deg,rgba(138,2,52,.05),#0000 3px,#0000 0px,#0000 9px)
+  .category-page
+    width 1240px
+    background #ffffff
+    margin 0 auto
+    position relative
+    padding 65px 65px
+    z-index: 9;
+
+
+    h1
+      color #333333
+      font-family "Gotham Pro"
+      font-size 36px
+      line-height: 48px
+    &__aside
+      width 255px
+      h6
+        color #333333
+        font-family "Gotham Pro"
+        font-size 24px
+        margin-top 40px
+      .category-aside-nav
+        &.subcategory
+          .aside-nav__menu
+            margin-left: 13px
+          h5
+            font-family "Gotham Pro"
+            font-size 16px
+            line-height 28px
+            margin 10px 0
+            color #333333
+            span
+              border-bottom: 1px solid
+        padding 20px 30px
+        position: relative;
+        border: 1px solid #d4d4d4;
+        &:after
+          content: ''
+          background: $bg-repeat
+          position: absolute;
+          size 100%
+          right: 5px
+          top: 5px
+          z-index: -1
+      .aside-nav__menu
+        position: relative;
+        z-index: 1
+
+      .aside-nav__menu-item
+        font-family "Gotham Pro"
+        font-size 16px
+        line-height 28px
+        margin 10px 0
+        span,a
+          color #333333
+          cursor: pointer;
+          transition: .45s
+        &:hover
+          span,a
+            color $color-hover-pink
+        &.active
+          span,a
+            padding-bottom: 3px
+            border-bottom: 1px solid
+            cursor pointer
+
+
+    &__head-box
+      margin-bottom: 46px;
+      &.flex
+        justify-content: space-between;
+        .category_sale
+          background-color #f9f9f9
+          padding 25px 50px 20px 20px
+          color #333333
+          position relative
+          max-height: 60px;
+          z-index 1
+          &:before
+            transform skewX(-37deg)
+            width: 70px
+            height 60px
+            position absolute
+            left: -26px
+            top 0
+            content ''
+            z-index -1
+            background-color #f9f9f9
+
+          &:after
+            content ''
+            width 20px
+            height 70px
+            position: absolute;
+            right: 0;
+            top: -8px;
+            box-shadow -4px 4px 10px rgba(0, 0, 0, 0.1)
+            background-image linear-gradient(to right, #f7f7f7 0%, #ffffff 45%, #ffffff 63%, #f1f1f1 100%)
+          span
+            color $color-xyeta
+    &__content
+        width calc(100% - 285px)
+        margin-left 30px
+        .content-sort
+          align-items center
+          border 1px solid #f1f1f1
+          padding 23px 30px
+          height 60px
+          margin: 1px 0 50px;
+          span
+            margin-right 10px
+          .sort-item
+            cursor pointer
+            color $color-xyeta
+            margin 0 10px
+          .sort-active
+            color #bfbfbf
+.category-aside__chekbox-pros
+  margin-top: 23px
+  .country__list
+    margin-left 20px
+    display: none;
+    label
+      margin 25px 0
+      display flex
+    .arrpw
+      transform: rotate(180deg)
+      transition: .55s
+  .country
+    margin: 20px 0
+    cursor: pointer
+    .flex
+      justify-content: space-between;
+      align-items: center;
+
+    .bel
+      i
+        background: url(../images/svg/belgium.svg)
+    .rus
+      i
+        background: url(../images/svg/russia.svg)
+    .grm
+      i
+        background: url(../images/svg/germany.svg)
+    .chn
+      i
+        background: url(../images/svg/china.svg)
+    .itl
+      i
+        background: url(../images/svg/italy.svg)
+    i
+      background: url(../images/svg/flag.png)
+      width 30px
+      height 30px
+      margin-right 10px
+      margin-left 3px
+
+
+    .arrpw
+      background: url(../images/down-arrow.png)
+      width 18px
+      height 10px
+
+
+  input
+      display none
+
+      &:checked + label
+        color #333333
+        &:before
+          background-color #ffb875
+          border 1px solid #ffb875
+
+
+  label
+    color #333333
+    font-size 16px
+    display flex
+    cursor pointer
+    align-items: center
+
+    &:hover
+      &:before
+        border 1px solid $color-xyeta
+
+    &:before
+      content ''
+      width 15px
+      height 15px
+      border 1px solid #bfbfbf
+      display block
+      margin-right 7px
+  &.active
+    opacity 1
+    transform translateY(0)
+    z-index 1
+.category-aside__colors
+  margin-top: 23px
+  input[type="checkbox"]
+    display none
+    &:checked ~ svg
+      &.icon-checked
+        transform: scale(1)
+
+
+
+    &:checked + label
+      &.closes
+        .icon-checked
+          transform: scale(0)!important
+      .icon-checked
+        width 10px
+        height 10px
+        transform: scale(1)
+  label
+    width 30px
+    height 30px
+    border-radius 100px
+    margin-right: 10px
+    margin-bottom: 10px
+    cursor pointer
+    position relative
+    display flex
+    justify-content center
+    align-items center
+    box-shadow inset 0 0 4px rgba(0, 0, 0, 0.1)
+
+
+    &.closes
+      .icon-checked
+        transform: scale(0)!important
+      .icon-close
+        transform: scale(1)!important
+    &:hover
+      .icon-checked
+        transform: scale(1)
+
+    .icon
+      width 10px
+      height 10px
+      position: absolute;
+    .icon-checked
+      transform: scale(0)
+      transition: .35s
+      &.white
+        fill #fff
+    .icon-close
+      transform: scale(0)
+      transition: .5s
+      &.white
+        fill #fff
+    &:hover
+        span
+          width 10px
+          height 10px
+          display block
+          background url(../images/tick.png) no-repeat
+    &.closes
+        span
+          width 10px
+          height 10px
+          display block
+          background url(../images/letter-x.png) no-repeat!important
+
+
+  .color1
+    background-color #ff9188
+  .color2
+    background-color #ffda8f
+  .color3
+    background-color #fff88f
+  .color4
+    background-color #b6ff8f
+  .color5
+    background-color #8fffbe
+  .color6
+    background-color #b49a68
+  .color7
+    background-color #8fffea
+  .color8
+    background-color #8fd4ff
+  .color9
+    background-color #8e91fd
+  .color10
+    background-color #8f92ff
+  .color11
+    background-color #ff8fde
+  .color12
+    background-color #a55e58
+  .color13
+    background-color #ffffff
+  .color14
+    background-color #e4e4e4
+  .color15
+    background-color #333333
+  .color16
+    background-image linear-gradient(134deg, #dedede 0%, #95979f 100%)
+  .color17
+    background-image linear-gradient(134deg, #ffe848 0%, #dacc06 100%)
+  .color18
+    background-color #f2e8c9
+  .color19
+    background-color #9cb764
+  .color20
+    background url('data:image/png;base64,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')
+
+
+
+.category-aside__figure
+  margin-top: 23px
+  input
+    display none
+    &:checked + label
+      border 1px solid #ffb875
+  label
+    width 30px
+    height 30px
+    margin-right 8px
+    margin-bottom: 8px
+    cursor pointer
+    border 1px solid #fff
+    &:hover
+      border 1px solid #ffb875
+  .q1
+    background url(../images/category-figure-1.png) no-repeat
+  .q2
+    background url(../images/category-figure-2.png) no-repeat
+  .q3
+    background url(../images/category-figure-3.png) no-repeat
+  .q4
+    background url(../images/category-figure-4.png) no-repeat
+  .q5
+    background url(../images/category-figure-5.png) no-repeat
+  .q6
+    background url(../images/category-figure-6.png) no-repeat
+
+.category-aside__price
+  margin-top: 23px
+  label
+    color #333333
+    line-height 24px
+    span
+        font-weight 700
+.price-radio-button
+    margin-top: 25px
+    input
+      display none
+      &:checked + label
+        span
+          &:before
+            background $color-xyeta
+
+    label
+      color #333333
+      align-items center
+      display flex
+      cursor pointer
+      &:nth-child(2)
+        margin-right 23px
+      span
+        width 24px
+        height 24px
+        box-shadow 0 0 5px rgba(0, 0, 0, 0.1)
+        border-radius 100px
+        background-color #ffffff
+        display flex
+        align-items center
+        margin-right 10px
+        &:before
+          background-color #e4e4e4
+          content ''
+          width 16px
+          height 16px
+          border-radius 50%
+          position absolute
+          margin-left 4px
+      sup
+        font-size 12px
+.category-aside__chekbox
+  margin-top: 23px
+  margin-left: -18px
+  position: relative;
+  input
+      display none
+      &:checked + label
+        color #333333
+        &:before
+          background-color $color-xyeta
+          border 1px solid $color-xyeta
+    label
+      font-size 14px
+      margin-left 18px
+      margin-bottom 20px
+      color #333
+      display flex
+      align-items center
+      cursor pointer
+      width: 41%;
+      &:hover
+        &:before
+          border 1px solid $color-xyeta
+      &:before
+        content ''
+        width 15px
+        height 15px
+        border 1px solid #bfbfbf
+        display block
+        margin-right 7px
+    &.active
+      opacity 1
+      transform translateY(0)
+      z-index 1
+
+#slider-range
+  width 245px
+  height 20px
+  box-shadow inset 0 0 10px rgba(0, 0, 0, 0.1)
+  background-color #f9f9f9
+  position: relative
+  margin-bottom: 30px
+  .ui-slider-range
+      height 20px
+      box-shadow inset 0 0 10px rgba(0, 0, 0, 0.1)
+      background-image linear-gradient(to right, $color-xyeta 0%, $color-fiolet-govna 100%)
+      position: relative
+      &:before
+        content ''
+        position absolute
+        border-bottom-left-radius 100%
+        border-bottom-right-radius 100%
+        left 0
+        right 0
+        top 0
+        bottom 0
+        background: repeating-linear-gradient(135deg,rgba(138,2,52,.05),#0000 3px,#0000 0px,#0000 9px)
+  .ui-slider-handle
+    width 10px
+    height 30px
+    box-shadow -1px 0 5px rgba(0, 0, 0, 0.1)
+    background-color rgba(216, 216, 216, 0)
+    background-image linear-gradient(to right, #f7f7f7 0%, #ffffff 45%, #ffffff 63%, #f1f1f1 100%)
+    position: absolute;
+    top 0
+    cursor pointer
+.navigation
+  display flex
+  justify-content: flex-end;
+
+  font-family "PT Sans"
+  font-size 16px
+  font-weight 400
+  margin-top: 30px
+  a,span
+    margin-left: 10px
+  a
+    color #bfbfbf
+    &:hover
+      color $color-xyeta
+
+  span
+    color $color-xyeta
+    font-weight 700
+
+
+.serarch-not-found
+  align-items: center
+  justify-content: center
+  img
+    width: 300px;
+    height: 300px;
+    margin-top: -10px
+  p
+    color: #333333;
+    font-family: "Gotham Pro";
+    font-size: 16px;
+  .wrap
+    text-align: center;

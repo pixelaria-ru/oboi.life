@@ -1,0 +1,52 @@
+doctype html
+html(lang='ru')
+    head
+        meta(charset='utf-8')
+        meta(name="theme-color" content="#e04592")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name='viewport' content='ya-title=#e04592, ya-dock=fade, initial-scale=1, maximum-scale=1, user-scalable=no')
+        meta(name='robots' content='none')
+        title ОБОИ.life
+        link(rel='stylesheet' href='css/style.css')
+    body
+      include inc/header.pug
+      main.main
+        article.main.contacts-page
+          .category
+            .cat-bg
+            .category-page.bounceInUp.animated
+              .category-page__head-box.flex
+                .head-box_left-side
+                  .sidebar
+                    a(href='index.html') Главная&nbsp;&nbsp;—&nbsp;&nbsp;
+                    span Контакты
+                  h1 Контакты 
+              .contacts-page.flex
+                .contacts__info
+                  .contacts__info-item
+                    .flex
+                      .info-item__icon
+                      .info-item__info
+                        h6 Адрес: 
+                        p Санкт-Петебург, ул. Орджоникидзе, д. 11 м. Ленинский проспект
+                  .contacts__info-item
+                    .flex
+                      .info-item__icon
+                      .info-item__info
+                        h6 Телефон, e-mail: 
+                        p +7 (999) 222-00-44
+                        p 
+                          a(href='mailto:office@oboi.life') office@oboi.life
+                  .contacts__info-item
+                    .flex
+                      .info-item__icon
+                      .info-item__info
+                        h6 Режим работы: 
+                        p Пн. – Пт.: с 10:00 до 18:00
+                        p Сб. - Вс.: выходные
+                    
+                  
+                    
+                .contacts__map
+      include inc/footer.pug        
+              

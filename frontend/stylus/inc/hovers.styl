@@ -1,0 +1,180 @@
+.header
+  .up-line--info__item
+    a
+      &:hover
+        border-bottom: 1px solid #ffffff
+  .main-header--right
+    &__search
+
+
+      input
+
+      .icon
+          transform: translateX(0px);
+          transition  transform 2s
+          transition fill 0s linear
+      &:hover,&.active
+        transform: translateX(-20px);
+        .icon
+          fill #fff
+          z-index: 99
+        input
+            transform: translateX(20px);
+            width 225px
+            padding-left 25px
+            opacity 1
+            color #fff
+
+  .main-header--left
+    .menu__item a
+      &:after
+        content ''
+        border-bottom 1px solid #ffffff
+        position absolute
+        width 100%
+        bottom 0
+        left 0
+        transform scaleX(0)
+        transform-origin left
+        transition .55s
+      &:hover,&:active,&:focus
+        &:after
+          transform scaleX(1)
+.main
+  .goods-wallpaper
+    &:hover
+      .goods-wallpaper__image
+        transform scale(1.05)
+        transition .55s
+.button
+    &--pink
+      transition .55s
+      &:hover,&:active,&:focus
+        background $color-hover-pink
+    &--grey
+      transition .55s
+      &:hover,&:active,&:focus
+        background #5c5c5c
+#button-up
+  transition .55s
+  &:hover,&:active,&:focus
+    background $color-hover-pink
+.main__last-news
+  .last-news
+    &__link
+      &:hover
+        border-bottom: 0px solid $color-fiolet-govna
+  a
+    transition .55s
+    &:hover,&:active,&:focus
+      text-decoration none
+.main__sale
+  .sale
+    .sale__part-number
+      transition .55s
+      &:hover,&:active,&:focus
+        color #333333
+  .owl-nav
+    .owl-prev,.owl-next
+        .icon
+          transition: .55s
+        &:hover
+          .icon
+            fill $color-hover-pink
+.text-mail-field
+  &:invalid
+    border 1px solid $color-hover-pink
+.article-news
+  h3
+    transition .55s
+  &:hover
+    h3
+      color $color-hover-pink
+.product-content
+  &__img
+    width 320px
+    height 400px
+    margin-bottom: 40px
+    .product-content__big-img
+        position: relative;
+        display: block;
+        &:before
+          content 'Увеличить'
+          width 110px
+          height 40px
+          transform scale(0)
+          transition .55s
+          position  absolute
+          margin: auto
+          left 0
+          right 0
+          top 0
+          bottom 0
+          display flex
+          justify-content: center;
+          align-items: center;
+          background-color $color-xyeta
+          color #ffffff
+          font-family "PT Sans"
+          font-size 12px
+          font-weight 400
+          border-radius 32px
+          opacity 0
+    &:hover
+      .product-content__big-img
+        &:before
+           transform scale(1)
+           opacity 1
+.form-wallpaper__select
+    &:hover
+        .sexy-select__list
+            opacity 1
+            transform: translateY(0)
+            z-index 3
+            visibility: visible
+
+.next-page
+  overflow: hidden;
+  &:hover
+
+    &:after
+      transform: scale(10)
+  &:after
+    content ''
+    transition: .55s
+    opacity: .65;
+    left: 0
+    right 0
+    top 0
+    bottom 0
+    size 100px
+    border-radius 50%
+    transform: scale(0)
+    background: #EDEDED
+    margin auto
+    position absolute
+    z-index: -1
+.short-news
+
+  &:hover
+    h4
+      span
+        border-bottom: 1px solid $color-hover-pink
+.article-category-news
+  h3
+    transition: .55s
+  &:hover
+
+      h3
+        color $color-hover-pink
+.category
+  .category-page__content
+    .content-sort
+      .sort-item
+        transition: .55s
+        &:hover
+          color: $color-fiolet-govna
+.main__initial-screen
+  .form-wallpaper__link
+    &:hover
+      border-bottom: 0px

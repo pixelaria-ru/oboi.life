@@ -1,0 +1,34 @@
+doctype html
+html(lang='ru')
+    head
+        meta(charset='utf-8')
+        meta(name="theme-color" content="#e04592")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name='viewport' content='ya-title=#e04592, ya-dock=fade, initial-scale=1, maximum-scale=1, user-scalable=no')
+        meta(name='robots' content='none')
+        title ОБОИ.life
+        link(rel='stylesheet' href='css/style.css')
+    body
+      include inc/header.pug
+      main.main
+        article.main.category-news
+          .category
+            .cat-bg
+            .category-page.bounceInUp.animated
+              .category-page__head-box.flex
+                .head-box_left-side
+                  .sidebar
+                    a(href='index.html') Главная&nbsp;&nbsp;—&nbsp;&nbsp;
+                    span Новости
+                  h1 Новости и события 
+              .category-news__container.flex
+                +article-category-news
+                +article-category-news
+                +article-category-news
+                +article-category-news
+                +article-category-news
+                +article-category-news
+        include inc/main__advantages.pug
+        include inc/main__seo-text.pug
+      include inc/footer.pug        
+        

@@ -1,0 +1,304 @@
+doctype html
+html(lang='ru')
+    head
+        meta(charset='utf-8')
+        meta(name="theme-color" content="#e04592")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name='viewport' content='ya-title=#e04592, ya-dock=fade, initial-scale=1, maximum-scale=1, user-scalable=no')
+        meta(name='robots' content='none')
+        title ОБОИ.life
+        link(rel='stylesheet' href='css/style.css')
+    body
+      include inc/header.pug
+      main.main
+        .category.main-cat
+          .cat-bg
+          .category-page.bounceInUp.animated
+            
+            .category-page__head-box.flex
+              .head-box_left-side
+                .sidebar
+                  a(href='index.html') Главная&nbsp;&nbsp;—&nbsp;&nbsp;
+                  a(href='#') Каталог&nbsp;&nbsp;—&nbsp;&nbsp;
+                  span Обои
+                h1 Каталог товаров
+              a(href='#').category_sale АКЦИЯ-СУПЕРАКЦИЯ! СКИДКА НА ФОТООБОИ 30%  
+                span ПЕРЕЙТИ
+            .flex
+              aside.category-page__aside
+                button.button-filtr Фильтр по характеристикам  
+                .modal-filtr
+                  form(method='GET')
+                    .button-filtr-close Скрыть
+                    nav.category-aside-nav
+                      ul.aside-nav__menu
+                        li.aside-nav__menu-item
+                          a(href='/subcategory.html') Обои
+                        li.aside-nav__menu-item
+                          a(href='#') Фрески
+                        li.aside-nav__menu-item
+                          a(href='#') Декор
+                        li.aside-nav__menu-item
+                          a(href='#') Клей 
+                        li.aside-nav__menu-item
+                          a(href='#') Напольные покрытия
+                        li.aside-nav__menu-item
+                          a(href='#') Плитка
+                    h6 Цена
+                    .category-aside__price
+                      #slider-range
+                      label(for="amount").price
+                      input(type="hidden" id="amount" readonly)
+                    .price-radio-button.flex
+                      input(type='radio' name='price' id='rulon' value='1' checked)
+                      label(for='rulon')
+                        span
+                        |за рулон
+                      input(type='radio' name='price' id='m2' value='1')
+                      label(for='m2')
+                        span 
+                        |за м<sup>2</sup>
+                    h6 Основа
+                    .category-aside__chekbox.flex
+                      input(type='checkbox' id='n1')
+                      label(for='n1') Флизелин
+                      input(type='checkbox' id='n2')
+                      label(for='n2') Бумага
+      
+                    h6 Покрытие
+                    .category-aside__chekbox.flex
+                      input(type='checkbox' id='n4')
+                      label(for='n4') Флизелин
+                      input(type='checkbox' id='n5')
+                      label(for='n5') Бумага
+                      input(type='checkbox' id='n6')
+                      label(for='n6') Текстиль
+                      input(type='checkbox' id='n7')
+                      label(for='n7') Винил 
+                      input(type='checkbox' id='n8')
+                      label(for='n8') Акрил
+                  
+                    h6 Тип рисунка
+                    .category-aside__figure.flex
+                      input(type='checkbox' id='q1')
+                      label(for='q1').q1
+                      input(type='checkbox' id='q2')
+                      label(for='q2').q2
+                      input(type='checkbox' id='q3')
+                      label(for='q3').q3
+                      input(type='checkbox' id='q4')
+                      label(for='q4').q4
+                      input(type='checkbox' id='q5')
+                      label(for='q5').q5
+                      input(type='checkbox' id='q6')
+                      label(for='q6').q6
+                      input(type='checkbox' id='qq1')
+                      label(for='qq1').q1
+                      input(type='checkbox' id='qq2')
+                      label(for='qq2').q2
+                      input(type='checkbox' id='qq3')
+                      label(for='qq3').q3
+                      input(type='checkbox' id='qq4')
+                      label(for='qq4').q4
+                      input(type='checkbox' id='qq5')
+                      label(for='qq5').q5
+                      input(type='checkbox' id='qq6')
+                      label(for='qq6').q6
+                      input(type='checkbox' id='qqq1')
+                      label(for='qqq1').q1
+                      input(type='checkbox' id='qqq2')
+                      label(for='qqq2').q2
+                      input(type='checkbox' id='q3')
+                      label(for='qqq3').q3
+                      input(type='checkbox' id='qqq4')
+                      label(for='qqq4').q4
+                      input(type='checkbox' id='qqq5')
+                      label(for='qqq5').q5
+                      input(type='checkbox' id='qqq6')
+                      label(for='qqq6').q6
+                    h6 Цвет
+                    .category-aside__colors.flex
+                      label(for='col1' data-title='розовый').color1
+                        input(type='checkbox' id='col1' )
+                        +icon('checked')
+                        +icon('close')
+                      label(for='col2' data-title='оранжевый').color2
+                        input(type='checkbox' id='col2')
+                        +icon('checked')
+                        +icon('close')
+                      label(for='col3' data-title='желтый').color3
+                        input(type='checkbox' id='col3')
+                        +icon('checked')
+                        +icon('close')
+                      label(for='col4' data-title='зеленный ').color4
+                        input(type='checkbox' id='col4')
+                        +icon('checked')
+                        +icon('close')
+                      label(for='col5' data-title='голубой').color5
+                        input(type='checkbox' id='col5')
+                        +icon('checked')
+                        +icon('close')
+                      label(for='col6' data-title='цвет').color6
+                        input(type='checkbox' id='col6')
+                        +icon('checked')
+                        +icon('close')
+                      label(for='col7' data-title='цвет').color7
+                        input(type='checkbox' id='col7')
+                        +icon('checked')
+                        +icon('close')
+                      label(for='col8' data-title='цвет').color8
+                        input(type='checkbox' id='col8')
+                        +icon('checked')
+                        +icon('close')
+                      label(for='col9' data-title='цвет').color9
+                        input(type='checkbox' id='col9')
+                        +icon('checked','white')
+                        +icon('close','white')
+                      label(for='col10' data-title='цвет').color10
+                        input(type='checkbox' id='col10')
+                        +icon('checked','white')
+                        +icon('close','white')
+                      label(for='col11' data-title='цвет').color11
+                        input(type='checkbox' id='col11')
+                        +icon('checked' ,'white')
+                        +icon('close','white')
+                      label(for='col12' data-title='цвет').color12
+                        input(type='checkbox' id='col12')
+                        +icon('checked','white')
+                        +icon('close','white')
+                      label(for='col13' data-title='цвет').color13
+                        input(type='checkbox' id='col13')
+                        +icon('checked')
+                        +icon('close')
+                      label(for='col14' data-title='цвет').color14
+                        input(type='checkbox' id='col14')
+                        +icon('checked')
+                        +icon('close')
+                      label(for='col15' data-title='цвет').color15
+                        input(type='checkbox' id='col15')
+                        +icon('checked' ,'white')
+                        +icon('close' ,'white')
+                      label(for='col16' data-title='цвет').color16
+                        input(type='checkbox' id='col16')
+                        +icon('checked','white')
+                        +icon('close' ,'white')
+                      label(for='col17' data-title='цвет').color17
+                        input(type='checkbox' id='col17')
+                        +icon('checked')
+                        +icon('close')
+                      label(for='col18' data-title='цвет').color18
+                        input(type='checkbox' id='col18')
+                        +icon('checked')
+                        +icon('close')
+                      label(for='col19' data-title='цвет').color19
+                        input(type='checkbox' id='col19')
+                        +icon('checked','white')
+                        +icon('close' ,'white')
+                      label(for='col20' data-title='цвет' ).color20
+                        input(type='checkbox' id='col20')
+                        +icon('checked')   
+                        +icon('close')
+                    h6 Ширина рулона
+                    .category-aside__chekbox.flex
+                      input(type='checkbox' id='n9')
+                      label(for='n9') 0,53 м
+                      input(type='checkbox' id='n10')
+                      label(for='n10') 0,7 м
+                      input(type='checkbox' id='n11')
+                      label(for='n11') 1,04 м
+                      input(type='checkbox' id='n12')
+                      label(for='n12') 1,06 м 
+                    h6 Производитель 
+                    .category-aside__chekbox-pros
+                      .country
+                        .flex
+                          input(type='checkbox' id='p1')
+                          label(for='dddp1').bel 
+                            i
+                            span Бельгия
+                          i.arrpw
+                      .country__list
+                        input(type='checkbox' id='pp1')
+                        label(for='pp1').bel Artshow	
+                        input(type='checkbox' id='pp2')
+                        label(for='pp2').bel A.S. Creation		
+                        input(type='checkbox' id='pp3')
+                        label(for='pp3').bel Elysium 	
+                        input(type='checkbox' id='pp4')
+                        label(for='pp4').bel Artshow		
+                        input(type='checkbox' id='pp5')
+                        label(for='pp5').bel A.S. Creation		
+                        input(type='checkbox' id='pp6')
+                        label(for='pp6').bel Elysium 	
+                      div.country
+                        .flex
+                          input(type='checkbox' id='p2')
+                          label(for='p2').rus 
+                            i
+                            span Россия
+                          i.arrpw
+                      div.country
+                        .flex
+                          input(type='checkbox' id='p3')
+                          label(for='p3').grm 
+                            i
+                            span Германия
+                          i.arrpw
+                      div.country
+                        .flex
+                          input(type='checkbox' id='p4')
+                          label(for='p4').chn 
+                            i
+                            span Китай
+                          i.arrpw
+                      div.country
+                        .flex
+                          input(type='checkbox' id='p5')
+                          label(for='p5').itl
+                            i
+                            span Италия
+                          i.arrpw
+            
+                    
+                    
+              .category-page__content
+                form.content-sort.flex
+                  span Сортировать:  
+                  input(type='hidden' id='sort-popular')
+                  label(for='sort-popular').sort-item.sort-active по популярности
+                  input(type='hidden' id='sort-price')
+                  label(for='sort-price').sort-item по цене
+                  input(type='hidden' id='sort-date')
+                  label(for='sort-date').sort-item по новизне  
+                  input(type='hidden' id='sort-sale')
+                  label(for='sort-sale').sort-item по акции 
+                .box-goods.flex
+                    +custom-wallpaper('Zambaiti Parati Trussardi 3 Z3401','1')
+                      span.goods-wallpaper__sale -70%
+                    +custom-wallpaper('Grandeco Textured Plains TP ','2')
+                    +custom-wallpaper('Zambaiti Parati Trussardi','3')
+                    +custom-wallpaper('Marburg Colani Evolution 56309','4')
+                    +custom-wallpaper('Zambaiti Parati Trussardi 3 Z3401','5')
+                      span.goods-wallpaper__sale.sale--orange NEW!
+                    +custom-wallpaper('Grandeco Textured Plains TP ','6')
+                    +custom-wallpaper('Zambaiti Parati Trussardi','7')
+                    +custom-wallpaper('Marburg Colani Evolution 56309','8')
+                    +custom-wallpaper('Zambaiti Parati Trussardi 3 Z3401','9')
+                    +custom-wallpaper('Grandeco Textured Plains TP ','10')
+                    +custom-wallpaper('Zambaiti Parati Trussardi','11')
+                    +custom-wallpaper('Marburg Colani Evolution 56309','12')
+                button.next-page Показать еще
+                .navigation
+                  span 1
+                  a(href='#') 2
+                  a(href='#') 3
+                  a(href='#') ...
+                  a(href='#') 12
+                  a(href='#') 13
+                  a(href='#') 14
+        include inc/main__advantages.pug
+        include inc/main__seo-text.pug
+      include inc/footer.pug   
+      
+      script
+        include script/var.js     

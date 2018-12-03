@@ -1,0 +1,189 @@
+.rouble
+  font-family "PT Sans"
+.product-advantages
+  margin-top: 40px
+.product-advantage
+  margin:  22px 0
+  &__img
+    width 70px
+    height 70px
+    border 2px solid $color-xyeta
+    border-radius: 50%
+
+
+
+  &__info
+    width calc(100% - 70px)
+  h5,p
+    color #333333
+    font-family "Gotham Pro Light"
+    font-size 16px
+    font-weight 300
+    line-height 28px
+    margin-left: 20px
+.product-content
+  &__img
+    width 320px
+    height 400px
+    margin-bottom: 40px
+
+
+
+    img
+      width 100%
+      cursor: pointer
+    .slider-nav
+      margin-top: 19px
+     .product-content__mini-img
+        margin: 2.5px
+        display: block;
+        size 60px!important
+
+
+  &__price
+    color #bfbfbf
+    font-family "Gotham Pro Light"
+    font-size 24px
+    font-weight 300
+    line-height 24px
+    margin-top: 30px
+    .price--sale
+      color $color-xyeta
+      font-family "Gotham Pro"
+      font-weight 700
+      margin-left: 10px
+
+  &__delivery
+      border 1px solid #cecece
+      position relative
+      margin-top: 30px
+      padding: 17px 20px
+      p
+        color #333333
+        font-family "Gotham Pro"
+        font-size 12px
+        line-height 22px
+      &:after
+        content ''
+        background: $bg-repeat
+        position absolute
+        width 100%
+        height 100%
+        top: 5px;
+        left: 5px;
+        z-index: -1;
+  &__info
+    width calc(100% - 320px)
+    padding-left:  30px
+    .product-info
+      &:last-child
+        margin-left: 30px
+      ul
+
+        &:first-child
+          li
+            &:after
+              content ''
+              border-bottom: 2px dotted #bfbfbf
+              position: absolute;
+              width: 100%
+              top 15px
+          span
+            margin-right: 50px
+            color #bfbfbf
+      &__item
+        margin 6px 0
+        position:  relative;
+
+        span
+          color #333333
+          font-family "PT Sans"
+          font-size 16px
+          font-weight 400
+          padding: 0px 3px;
+          position: relative;
+          z-index: 9;
+          background:  #ffffff
+  &__buy
+    margin-top: 30px
+    justify-content: flex-end;
+    input
+      background: 0;
+      width: 100%;
+      text-align: center;
+
+    label
+      position: relative;
+      width 120px
+      height 60px
+      box-shadow inset 0 0 5px rgba(0, 0, 0, 0.2)
+      border-radius 32px
+      background-color #ffffff
+      margin-right: 15px
+      text-align: center;
+      display flex
+
+      span
+        .icon
+          width 16px
+          height 16px
+          fill #bfbfbf
+          position: absolute;
+          right: 20px;
+          cursor: pointer;
+          transform: rotate(-90deg)
+          transition: .55s
+        &:hover
+          .icon
+            fill #333
+        &:nth-child(2)
+          .icon
+            top: 13px;
+        &:last-child
+          .icon
+            bottom: 13px
+            transform: rotate(90deg)
+      input[type='number']
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button
+          -webkit-appearance: none
+        -moz-appearance: textfield;
+
+    .button
+      padding: 20px 40px
+      font-family "PT Sans"
+      font-size 16px
+      font-weight 400
+
+
+
+  &__discription
+    p
+      color #333333
+      font-family "PT Sans"
+      font-size 16px
+      font-weight 400
+      line-height 28px
+      margin: 10px 0
+  &__characteristics
+    margin-top: 30px
+    margin-left: -3px
+    .characteristic__item
+      justify-content: space-between;
+      margin 6px 0
+      position:  relative;
+      &:after
+        content ''
+        border-bottom: 2px dotted #bfbfbf
+        position: absolute;
+        width: 100%
+        top 15px
+      span
+        color #333333
+        font-family "PT Sans"
+        font-size 16px
+        font-weight 400
+        padding: 0px 3px;
+        position: relative;
+        z-index: 9;
+        background:  #ffffff

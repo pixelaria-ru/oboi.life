@@ -1,0 +1,93 @@
+doctype html
+html(lang='ru')
+    head
+        meta(charset='utf-8')
+        meta(name="theme-color" content="#e04592")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name='viewport' content='ya-title=#e04592, ya-dock=fade, initial-scale=1, maximum-scale=1, user-scalable=no')
+        meta(name='robots' content='none')
+        title ОБОИ.life
+        link(rel='stylesheet' href='css/style.css')
+    body
+      include inc/header.pug
+      main.main
+        .category.sub-cat
+          .cat-bg
+          .category-page.bounceInUp.animated
+            
+            .category-page__head-box.flex
+              .head-box_left-side
+                .sidebar
+                  a(href='index.html') Главная&nbsp;&nbsp;—&nbsp;&nbsp;
+                  span Результаты поиска  
+                h1 Обои ромбиками
+          
+            .flex
+              aside.category-page__aside
+                  nav.category-aside-nav.subcategory
+                    h5 
+                      span Обои
+                    ul.aside-nav__menu
+                      li.aside-nav__menu-item
+                        span Фрески
+                      li.aside-nav__menu-item
+                        span Декор
+                      li.aside-nav__menu-item
+                        span Клей 
+                      li.aside-nav__menu-item
+                        span Напольные покрытия
+                      li.aside-nav__menu-item
+                        span Плитка
+                  .product-advantages
+                    .product-advantage
+                      .flex
+                        .product-advantage__img
+                          img(src='' alt='')
+                        .product-advantage__info
+                          h5 Преимущество №1
+                          p привлекательное, также понятное
+                    .product-advantage
+                      .flex
+                        .product-advantage__img
+                          img(src='' alt='')
+                        .product-advantage__info
+                          h5 Преимущество №1
+                          p привлекательное, также понятное
+                    .product-advantage
+                      .flex
+                        .product-advantage__img
+                          img(src='' alt='')
+                        .product-advantage__info
+                          h5 Преимущество №1
+                          p привлекательное, также понятное
+            
+                    
+                    
+              .category-page__content
+                form.content-sort.flex
+                  span Сортировать:  
+                  input(type='hidden' id='sort-popular')
+                  label(for='sort-popular').sort-item.sort-active по популярности
+                  input(type='hidden' id='sort-price')
+                  label(for='sort-price').sort-item по цене
+                  input(type='hidden' id='sort-date')
+                  label(for='sort-date').sort-item по новизне  
+                  input(type='hidden' id='sort-sale')
+                  label(for='sort-sale').sort-item по акции 
+                .box-goods.flex
+                    +custom-wallpaper('Zambaiti Parati Trussardi 3 Z3401','1')
+                      span.goods-wallpaper__sale -70%
+                    +custom-wallpaper('Grandeco Textured Plains TP ','2')
+                    +custom-wallpaper('Zambaiti Parati Trussardi','3')
+                    +custom-wallpaper('Marburg Colani Evolution 56309','4')
+                    +custom-wallpaper('Zambaiti Parati Trussardi 3 Z3401','5')
+                      span.goods-wallpaper__sale.sale--orange NEW!
+        
+        
+
+          include inc/main__advantages.pug
+          include inc/main__seo-text.pug
+      include inc/footer.pug        
+
+      script
+        include script/openSearch.js

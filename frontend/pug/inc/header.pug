@@ -1,0 +1,62 @@
+include mixins.pug
+
+header.header
+  .up-line
+      .container.flex
+          ul.up-line--adress.flex
+              li.up-line--adress__item
+                  span Санкт-Петербург
+              li.up-line--adress__item
+                  a(href='tel:88123334545') 8 (812) 333-45-45
+          ul.up-line--info.flex
+              li.up-line--info__item
+                  a(href='contacts.html') Контакты  
+              li.up-line--info__item
+                  a(href='#') О нас 
+              li.up-line--info__item
+                  a(href='order.html') Доставка и оплата 
+  .main-header
+      .container.flex
+          .main-header--left.flex
+              a(href='index.html').logotype.flex
+                  .logo-img
+                    img(src='images/svg/logo-white.svg' alt='')
+                  span 
+                    strong ОБОИ.
+                      i life
+              button.mobile-menu Меню
+              ul.menu.flex
+                  li.menu__item 
+                      a(href='category.html') Обои
+                  li.menu__item 
+                      a(href='#') Фотообои
+                  li.menu__item 
+                      a(href='#') Обои Дисконт %
+                  li.menu__item 
+                      a(href='#') Фрески
+                  li.menu__item 
+                      a(href='#') Декор
+                  li.menu__item 
+                      a(href='#') Клей 
+                  li.menu__item 
+                      a(href='#') Полы
+                  li.menu__item 
+                      a(href='#') Плитка
+          .main-header--right.flex
+              #search.main-header--right__search.active
+                +icon('search')
+                input(type='text' name='search' placeholder='Поиск по каталогу')#searchInput
+              .main-header--right__cart
+                  +icon('cart')
+                  span 12
+              .main-header--right__cart-open
+                h5 Корзина покупок
+                .cart-products
+                  +cart-product
+                  +cart-product
+                  +cart-product
+                  +cart-product
+                  +cart-product
+                .cart-open__footer.flex
+                  a.cart-open__continue-buy(href='#') Продолжить покупки
+                  button.button.button--pink Оформить заказ

@@ -1,0 +1,73 @@
+&__initial-screen
+    padding 225px 0 12.27%
+    position: relative;
+    border-bottom-left-radius 100%
+    border-bottom-right-radius 100%
+    background-image: linear-gradient(0deg, #ffda8f 30%, #e04592 100%);
+    width 200%
+    left -50%
+    min-height: 670px
+    max-height: 670px
+    &:before
+      content ''
+      position absolute
+      border-bottom-left-radius 100%
+      border-bottom-right-radius 100%
+      left 0
+      right 0
+      top 0
+      bottom 0
+      background: repeating-linear-gradient(135deg,rgba(138,2,52,.05),#0000 3px,#0000 0px,#0000 9px)
+    .initial-screen--decor
+        background url(../images/decor-initial.png) no-repeat
+        position absolute
+        width 290px
+        height 380px
+        top 160px
+        right -8px
+        z-index: 0
+    h1
+        color #ffffff
+        font-size 2.25em
+        text-align center
+        margin-bottom 50px
+    .form-wallpaper
+        position: relative;
+        z-index: 1
+        &.flex
+            justify-content center
+        &__buttons
+          align-items: center
+        .wrap
+          margin-top: 50px;
+        &__link
+            color $color-fiolet-govna
+            border-bottom: 1px solid $color-fiolet-govna
+
+            margin-right: 25px;
+            padding-bottom: 2px;
+        &__select
+            margin 0 5px
+            position relative
+            font-family "PT Sans"
+            z-index: 0;
+            select
+                width 100%
+                padding 21px 0 21px 55px
+                -webkit-appearance none
+                -moz-appearance none
+                appearance none
+                cursor pointer
+                font-family "PT Sans"
+            &:hover.form-wallpaper__select
+                .icon-right-arrow
+                   transform rotate(270deg)
+        .select--figures
+            width: 255px;
+
+        .select--prices
+            width: 255px;
+
+        .button
+            margin 55px auto 0
+            display block

@@ -1,0 +1,41 @@
+doctype html
+html(lang='ru')
+    head
+        meta(charset='utf-8')
+        meta(name="theme-color" content="#e04592")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name='viewport' content='ya-title=#e04592, ya-dock=fade, initial-scale=1, maximum-scale=1, user-scalable=no')
+        meta(name='robots' content='none')
+        title ОБОИ.life
+        link(rel='stylesheet' href='css/style.css')
+    body
+      include inc/header.pug
+      main.main
+        article.main.article
+          .category
+            .cat-bg
+            .category-page.bounceInUp.animated
+              .category-page__head-box.flex
+                .head-box_left-side
+                  .sidebar
+                    a(href='index.html') Главная&nbsp;&nbsp;—&nbsp;&nbsp;
+                    a(href='/category-news.html') Новости&nbsp;&nbsp;—&nbsp;&nbsp;
+                    span Новость 
+                  h1 Новость компании 
+              .flex
+                aside.category-page__aside
+                    .aside-news
+                      +short-news
+                      +short-news
+                      +short-news
+                      +short-news
+                    
+                .category-page__content.news-content
+                    img(src='images/news-img-1.jpg' alt='')
+                    p "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. 
+                    p "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. 
+                    p "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. 
+
+        include inc/main__seo-text.pug
+      include inc/footer.pug        
+              

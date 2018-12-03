@@ -1,0 +1,180 @@
+doctype html
+html(lang='ru')
+    head
+        meta(charset='utf-8')
+        meta(name="theme-color" content="#e04592")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name='viewport' content='ya-title=#e04592, ya-dock=fade, initial-scale=1, maximum-scale=1, user-scalable=no')
+        meta(name='robots' content='none')
+        title ОБОИ.life
+        link(rel='stylesheet' href='css/style.css')
+    body
+      include inc/header.pug
+      main.main
+        article.main.article
+          .category
+            .cat-bg
+            .category-page.bounceInUp.animated
+              .category-page__head-box.flex
+                .head-box_left-side
+                  .sidebar
+                    a(href='index.html') Главная&nbsp;&nbsp;—&nbsp;&nbsp;
+                    a(href='#') Каталог&nbsp;&nbsp;—&nbsp;&nbsp;
+                    a(href='#') Обои&nbsp;&nbsp;—&nbsp;&nbsp;
+                    span Бумажные обои 
+                  h1 Grandeco Textured Plains TP 
+              .flex
+                aside.category-page__aside
+                    nav.category-aside-nav.subcategory
+                      h5 
+                        span Обои
+                      ul.aside-nav__menu
+                        li.aside-nav__menu-item.active
+                          span Бумажные обои
+                        li.aside-nav__menu-item
+                          span Виниловые обои
+                        li.aside-nav__menu-item
+                          span Флизелиновые обои
+                        li.aside-nav__menu-item
+                          span Фотообои
+                        li.aside-nav__menu-item
+                          span Обои дисконт %
+                    .product-advantages
+                      .product-advantage
+                        .flex
+                          .product-advantage__img
+                            img(src='' alt='')
+                          .product-advantage__info
+                            h5 Преимущество №1
+                            p привлекательное, также понятное
+                      .product-advantage
+                        .flex
+                          .product-advantage__img
+                            img(src='' alt='')
+                          .product-advantage__info
+                            h5 Преимущество №1
+                            p привлекательное, также понятное
+                      .product-advantage
+                        .flex
+                          .product-advantage__img
+                            img(src='' alt='')
+                          .product-advantage__info
+                            h5 Преимущество №1
+                            p привлекательное, также понятное
+                .category-page__content.product-content
+                  .flex
+                    .product-content__img
+                        .slider-for
+                          a(href="images/goods-wallpaper-1.jpg" data-fancybox="images" data-caption="Grandeco Textured Plains TP ").product-content__big-img
+                            img(src='images/goods-wallpaper-1.jpg' alt='')
+                          a(href="images/goods-wallpaper-2.jpg" data-fancybox="images" data-caption="Grandeco Textured Plains TP ").product-content__big-img
+                            img(src='images/goods-wallpaper-2.jpg' alt='')
+                          a(href="images/goods-wallpaper-3.jpg" data-fancybox="images" data-caption="Grandeco Textured Plains TP ").product-content__big-img
+                            img(src='images/goods-wallpaper-3.jpg' alt='')
+                          a(href="images/goods-wallpaper-4.jpg" data-fancybox="images" data-caption="Grandeco Textured Plains TP ").product-content__big-img
+                            img(src='images/goods-wallpaper-4.jpg' alt='')
+                          a(href="images/goods-wallpaper-5.jpg" data-fancybox="images" data-caption="Grandeco Textured Plains TP ").product-content__big-img
+                            img(src='images/goods-wallpaper-5.jpg' alt='')
+                        
+                        .slider-nav
+                          .product-content__mini-img
+                            img(src='images/goods-wallpaper-1.jpg' alt='')
+                          .product-content__mini-img
+                            img(src='images/goods-wallpaper-2.jpg' alt='')
+                          .product-content__mini-img
+                            img(src='images/goods-wallpaper-3.jpg' alt='')
+                          .product-content__mini-img
+                            img(src='images/goods-wallpaper-4.jpg' alt='')
+                          .product-content__mini-img
+                            img(src='images/goods-wallpaper-5.jpg' alt='')
+                    .product-content__info
+                      .flex
+                        .product-info.flex
+                          ul
+                            li.product-info__item.flex
+                              span Основа
+                            li.product-info__item.flex
+                              span Рисунок
+                            li.product-info__item.flex
+                              span Ширина
+                            li.product-info__item.flex
+                              span Страна
+                            li.product-info__item.flex
+                              span Бренд 
+                          ul
+                            li.product-info__item.flex
+                              span флазелин
+                            li.product-info__item.flex
+                              span абстракция
+                            li.product-info__item.flex
+                              span 1,06 м
+                            li.product-info__item.flex
+                              span черно-белый
+                            li.product-info__item.flex
+                              span  Stark 
+                        .product-info.flex
+                          ul
+                            li.product-info__item.flex
+                              span Покрытие
+                            li.product-info__item.flex
+                              span Цвет 
+                            li.product-info__item.flex
+                              span Длина
+                            li.product-info__item.flex
+                              span Артикул 
+                          ul
+                            li.product-info__item.flex
+                              span винил
+                            li.product-info__item.flex
+                              span черно-белый
+                            li.product-info__item.flex
+                              span 10,5 м
+                            li.product-info__item.flex
+                              span 1211-01
+                      .product-content__price   99 999 
+                            span.rouble ₽  
+                            span.price--sale 14 990 
+                              span.rouble ₽
+                      .product-content__delivery
+                          p
+                            |Доставка: бесплатно при заказе от 5000 
+                            span.rouble ₽ 
+                            |(или 500 
+                            span.rouble ₽ 
+                            |по КАД) 
+                          p Самовывоз: ул.Толстого, д. 24, с 9:00 до 19:00
+                      form.product-content__buy.flex
+                        label(for="buy-num")
+                          input(type='number' id='buy-num'  value='1' min='1')
+                          span
+                            +icon('right-arrow')
+                          span
+                            +icon('right-arrow')
+                        button.button.button--pink#buy-product Добавить в корзину
+                  .product-content__discription
+                    p.
+                      Небольшое описание товара, несколько предложений на один абзац. Небольшое описание товара, несколько предложений на один абзац. Небольшое описание товара, несколько предложений на один абзац. Небольшое описание товара. Небольшое описание товара, несколько предложений на один абзац. Небольшое описание товара, несколько предложений на один абзац. Небольшое описание товара.
+                  .product-content__characteristics
+                    ul
+                      li.characteristic__item.flex
+                        span Характеристика
+                        span Stark 
+                      li.characteristic__item.flex
+                        span Характеристика 2
+                        span Огнеупорная
+                      li.characteristic__item.flex
+                        span Характеристика
+                        span Stark 
+                      li.characteristic__item.flex
+                        span Характеристика 2
+                        span Огнеупорна 
+                      li.characteristic__item.flex
+                        span Характеристика
+                        span Stark 
+                      li.characteristic__item.flex
+                        span Характеристика 2
+                        span Огнеупорна 
+          
+        include inc/main__advantages.pug
+      include inc/footer.pug        
+              

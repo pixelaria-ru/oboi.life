@@ -1,0 +1,96 @@
+doctype html
+html(lang='ru')
+    head
+        meta(charset='utf-8')
+        meta(name="theme-color" content="#e04592")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name='viewport' content='ya-title=#e04592, ya-dock=fade, initial-scale=1, maximum-scale=1, user-scalable=no')
+        meta(name='robots' content='none')
+        title ОБОИ.life
+        link(rel='stylesheet' href='css/style.css')
+    body
+      include inc/header.pug
+      article.main.order
+        .category
+          .cat-bg
+          .category-page.bounceInUp.animated
+            .category-page__head-box.flex
+              .head-box_left-side
+                .sidebar
+                  a(href='index.html') Главная&nbsp;&nbsp;—&nbsp;&nbsp;
+                  span Оформление заказа
+                h1 Оформление заказа
+            .order-form.flex
+              
+              .order-form--left
+                .order-form__block
+                  h2 Контакты
+                  .order-form__block-fild.flex
+                    h3 Фамилия, имя*
+                    input(id='order-name22' type='text' placeholder='Владимир Ленский')
+                .order-form__two-blocks.flex
+                  .order-form__block-fild.flex
+                    h3 Email
+                    input(id='emailus' type='text'  placeholder='m.lermontov@gmail.ru')
+                  .order-form__block-fild.flex
+                    h3 Телефон*
+                    input(id='phone' type='tel' placeholder='+7 (999) 888-77-66')
+                .order-form__block.order--delivery
+                  h2 Доставка
+                  .price-radio-button.flex
+                    input(type='radio' name='price' id='rulon' value='1' checked)
+                    label(for='rulon')
+                      span
+                      |Курьерская доставка
+                    input(type='radio' name='price' id='m2' value='1')
+                    label(for='m2')
+                      span 
+                      |Самовывоз из пункта выдачи
+                  .order-form__block-fild.flex
+                    h3 Адрес
+                    input(id='order-name' type='text' placeholder='Санкт-Петербург, ул. Льва Толстого, д. 23, кв. 7')
+                .order-form__block
+                  h2 Оплата
+                  .price-radio-button.flex
+                    input(type='radio' name='price22' id='rulon22' value='1' checked)
+                    label(for='rulon22')
+                      span
+                      |Наличными при получении
+                    input(type='radio' name='price22' id='m22' value='1')
+                    label(for='m22')
+                      span 
+                      |Безналичный платеж
+              .order-form--right
+                 .all-order
+                   h2 Ваш заказ
+                   +cart-product
+                   +cart-product
+                   +cart-product
+                   +cart-product
+                 .order-end.flex
+                   .order-result Итого: 
+                      span 131 000 
+                        span.rouble ₽
+                   input(type='submit' value='Завершить заказ')#open-modal.button.button--grey
+              hr
+              .order__info
+                .order__info-detail.flex
+                  h5 Условия доставки
+                  p Доставка осуществляется по будням с 10:00 до 17:00. Время исполнения вашего заказа - от 1 до 7 суток. Доставка осуществляется до подъезда!  В пределах г. Санкт-Петербург доставка 500 рублей. В случае доставки товара за пределы г. Санкт-Петербург, дополнительно оплачивается 20 рублей каждый километр. Бесплатная доставка в пределах КАД осуществляется при заказе в интернет-магазине на сумму от 10 000 руб.
+                .order__info-detail.flex
+                  h5 Способы оплаты
+                  p Небольшое описание товара, несколько предложений на один абзац. Небольшое описание товара, несколько предложений на один абзац. Небольшое описание товара, несколько предложений на один абзац. Небольшое описание товара. Небольшое описание товара, несколько предложений на один абзац. Небольшое описание товара, несколько предложений на один абзац. Небольшое описание товара. 
+
+
+      #order-modal.flex
+        .modal-wrap
+          .order-modal__img
+            .modal__img-box.flex
+              img(src='images/order-modal.jpg' alt='')
+          .order-modal__info
+            h4 Заказ успешно оформлен!
+            p Спасибо за заказ! На указанную почту отправлено подтверждение покупки. Менеджер свяжется с вами в самое ближайшее время. 
+            a(href="/").button.button--pink Вернуться на главную страницу 
+      include inc/footer.pug  
+      script
+        include script/validator.js

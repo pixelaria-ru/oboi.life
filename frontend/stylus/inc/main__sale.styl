@@ -1,0 +1,71 @@
+&__sale
+    padding 130px 0
+    overflow hidden
+    width 1150px
+    margin 0 auto
+    .sale
+        width 1110px
+        height 470px
+        background $bg-repeat
+        margin 0 auto
+        padding 60px 80px
+        position relative
+        &__border-box
+            background #fff
+            border 8px solid
+            max-width 400px
+            padding 30px 40px
+            margin-bottom 30px
+            border-image linear-gradient(135deg, #ffda8f 0%, #e04592 100%);
+            border-image-slice 1
+            z-index 1
+            position relative
+            h3
+                color #333333
+                font-size 36px
+                font-weight 700
+                line-height 48px
+                text-transform uppercase
+            p
+                font-family "PT Sans"
+                font-weight 400
+                line-height 24px
+                max-width 85%
+        &__part-number
+            color #bfbfbf
+            font-family "PT Sans"
+            font-weight 400
+            text-transform uppercase
+            position absolute
+            right 28px
+            bottom 28px
+            z-index: 99999;
+            cursor: pointer;
+        &__roller
+            background url(../images/sale-roller.png)no-repeat
+            width 260px
+            height 191px
+            opacity 0.9
+            mix-blend-mode darken
+            position absolute
+            top: 393px;
+            left: 318px;
+        &__big-roller
+            position absolute
+            top 3px
+            right 55%
+            .big-roller__roller
+                width 70px
+                height 311px
+                transform rotate(-45deg)
+                box-shadow -4px 4px 10px rgba(0, 0, 0, 0.1), -10px 0 10px rgba(0, 0, 0, 0.05)
+                background-image linear-gradient(to right, #f7f7f7 0%, #ffffff 45%, #ffffff 63%, #f1f1f1 100%)
+                position absolute
+                top -70px
+                right -480px
+                z-index 1
+            .big-roller__color
+                width 537px
+                height 537px
+                background url(../images/color-big-roller.png)no-repeat
+                position absolute

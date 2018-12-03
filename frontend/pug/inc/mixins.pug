@@ -1,0 +1,76 @@
+mixin custom-wallpaper(title,img)
+    article.goods-wallpaper
+      a(href='/page-product.html')
+        .goods-wallpaper__image
+          if block
+            block 
+          img(src='images/goods-wallpaper-' + img + '.jpg' alt=title)
+        .goods-wallpaper__type Флазелиновые обои
+        h3= title
+        footer.goods-wallpaper__footer.flex
+            +icon('little-thin-left-arrow','arrrow')
+            .footer-bottom.flex
+              .goods-wallpaper__price 99 999 ₽
+                  span  за рулон
+              +icon('ittle-thin-left-arrow')
+mixin article-sale
+    article.sale
+        .sale__border-box
+            h3 СКИДКА 30% НА ВСЕ ФОТООБОИ
+            p.
+              До 31 декабря 2018 года. 
+              Предложение ограничено (шутка)
+        button.button.button--grey Узнать больше
+        span.sale__part-number RAW TECH 2 VIOLET
+        i.sale__roller
+        span.sale__big-roller
+            i.big-roller__roller
+            i.big-roller__color
+
+mixin icon(name,mod)
+  - mod = mod || ''
+  svg(class="icon icon-" + name + ' ' + mod)
+      use(xlink:href="#icon-" + name)
+        
+mixin short-news
+  article.short-news
+    a(href='#').flex
+      img(src='images/short-news.jpg' alt='')
+      h4 
+        span Заголовок новости, длинный
+mixin article-category-news
+  atricle.article-category-news
+    a(href='/page-news.html')
+      .flex
+        img(src='images/article-cetegory-news.jpg' alt='')
+        .article-category-news__info
+          h3 Загловок новости
+          p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore 
+            
+      
+mixin article-news(title,date)
+    article.article-news
+      a(href="/page-news.html").article-news-link.flex
+        h3= title
+        .article-news__date
+            span= date
+        .article-news__img
+            img(src='' alt='')
+              
+mixin cart-product
+  article.cart-product.flex
+    .cart-product__img
+      img(src='images/goods-wallpaper-1.jpg' alt='')
+    .cart-product__info
+      h6 Grandeco Textured 
+      p Plains TP 
+    .cart-product__number
+      label(for="buy-num")
+        input(type='number' id='buy-num'  value='120' min='1')
+        span(onclick="this.previousElementSibling.stepUp()")
+          +icon('right-arrow')
+        span(onclick="this.previousElementSibling.previousElementSibling.stepDown()")
+          +icon('right-arrow')
+    .cart-product__price
+      span 23 350 ₽
+    +icon('close')
