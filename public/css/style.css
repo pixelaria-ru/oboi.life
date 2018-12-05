@@ -1092,7 +1092,8 @@ select:focus
 }.category .category-page__aside .category-aside-nav.subcategory .aside-nav__menu
 {
     margin-left: 13px;
-}.category .category-page__aside .category-aside-nav.subcategory h5
+}.category .category-page__aside .category-aside-nav.subcategory h5,
+.category .category-page__aside .category-aside-nav.subcategory h5 a
 {
     font: 1rem/1.75rem Gotham Pro;margin: 10px 0;color: #333;
 }.category .category-page__aside .category-aside-nav.subcategory h5 span
@@ -1891,7 +1892,7 @@ hr
     bottom: 9px;-webkit-transform: rotate(90deg);-ms-transform: rotate(90deg);transform: rotate(90deg);background-size: cover;
 }.cart-product__info
 {
-    font-size: 0.75rem;line-height: 1.375rem;margin: 0 8px 0 10px;color: #333;
+    font-size: 0.75rem;line-height: 1.375rem;min-width: 96px;margin: 0 8px 0 10px;color: #333;
 }.cart-product__info h6
 {
     font-family: PT Sans;
