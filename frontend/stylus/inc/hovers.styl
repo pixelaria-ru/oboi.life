@@ -6,7 +6,7 @@
   .main-header--right
     &__search
 
-
+      transition: .88s;
       input
 
       .icon
@@ -16,14 +16,18 @@
       &:hover,&.active
         transform: translateX(-20px);
         .icon
-          fill #fff
+          fill #333
           z-index: 99
+          transition: .88s;
+
         input
             transform: translateX(20px);
             width 225px
             padding-left 25px
             opacity 1
-            color #fff
+            color #333
+            transition: .88s;
+            background: #fff;
 
   .main-header--left
     .menu__item a

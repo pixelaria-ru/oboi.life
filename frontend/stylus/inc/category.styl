@@ -82,7 +82,7 @@
               margin 10px 0
               color #333333
             span
-              border-bottom: 1px solid
+              color $color-hover-pink
         padding 20px 30px
         position: relative;
         border: 1px solid #d4d4d4;
@@ -107,14 +107,26 @@
           color #333333
           cursor: pointer;
           transition: .45s
+          position relative
+          &:after
+            content ''
+            width 0%
+            height 1px
+            background #333
+            position absolute
+            bottom -3px
+            left 0
+            transition .55s
         &:hover
           span,a
-            color $color-hover-pink
+            &:after
+              width 100%
         &.active
           span,a
-            padding-bottom: 3px
-            border-bottom: 1px solid
-            cursor pointer
+            color $color-hover-pink
+            &:after
+              width 0%
+
 
 
     &__head-box

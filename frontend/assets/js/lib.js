@@ -1,3 +1,15 @@
+var cartus = document.querySelector('.main-header--right__cart span');
+if(cartus.innerHTML === '0'){
+    cartus.style.display = 'none';
+    document.querySelector('.cart-products').innerHTML = '<p>В корзине ничего нет.  Время покупок!'
+}else{
+    cartus.style.display = 'block';
+
+}
+document.querySelector('.cart-open__continue-buy').addEventListener('click', function(){
+    document.querySelector('.main-header--right__cart').classList.remove('active');
+    document.querySelector('.main-header--right__cart-open').classList.remove('active');
+})
 
 jQuery('.button-filtr').click(function(){
   jQuery('.modal-filtr').addClass('active');
@@ -491,10 +503,10 @@ jQuery(window).scroll(function () {
     jQuery('.main-header').removeClass('active');
     if (jQuery(this).scrollTop() > 500) {
         jQuery('.main-header').addClass('fixed');
-        jQuery('.logotype img').attr({'src':'images/svg/logo.svg'});
+        jQuery('.logotype img').attr({'src':'/images/svg/logo.svg'});
     }else {
         jQuery('.main-header').removeClass('fixed');
-        jQuery('.logotype img').attr({'src':'images/svg/logo-white.svg'});
+        jQuery('.logotype img').attr({'src':'/images/svg/logo-white.svg'});
     }
 });
 
